@@ -1,6 +1,6 @@
 # Variáveis
 
-Variáveis em Go são tipadas estáticamente, ou seja seu tipo é checado na hora de sua declaração, sendo imutável.
+Variáveis em Go são tipadas estaticamente, ou seja seu tipo é checado na hora de sua declaração, sendo imutável.
 Elas são declaradas de maneira explícita.
 
 ```golang
