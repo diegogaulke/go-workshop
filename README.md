@@ -19,7 +19,7 @@
 golang.org:
 >"Go é uma linguagem de programação open-source que torna fácil criar software simples, confiável e eficiente."
 
-A linguagem foi desenvolvida dentro da Google, pelos engenheiros Robert Robert Griesemer, Rob Pike e Ken Thompson.
+A linguagem foi desenvolvida dentro da Google, pelos engenheiros Robert Griesemer, Rob Pike e Ken Thompson.
 
 A primeira versão open-source foi lançada em março de 2012.
 

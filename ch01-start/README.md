@@ -29,6 +29,8 @@ GOROOT="/usr/local/go"
 
 # Hello World
 
+Crie um arquivo chamado *main.go* com o seguinte conteúdo:
+
 ```golang
 package main
 
@@ -41,3 +43,29 @@ func main(){
 }
 ```
 
+No exemplo acima, a primeira linha indica que este arquivo Go pertence ao pacote *main*.
+
+Logo após temos uma declaração de importação de outro pacote, o *fmt*. O pacote *fmt* prove funções de formatação de I/O.
+
+Importamos o pacote utilizando a palavra reservada *import*.
+
+```func main()``` é o ponto principal de entrada para aplicação.
+
+```Println``` é a função do pacote *fmt* que imprime "hello world".
+
+Vamos compilar o código:
+```
+go build main.go
+```
+
+Isto vai gerar um binário chamado *main*.
+Vamos executar ele:
+```
+./main
+```
+
+Existe uma maneira mais simples de rodar o código go, que abstrai a compilação.
+
+```
+go run main.go
+```
