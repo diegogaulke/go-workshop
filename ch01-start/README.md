@@ -5,7 +5,7 @@ Go é baseado em pacotes.
 
 O Pacote *main* é o pacote que diz ao compilador que o programa em questão é um executável. Ele é o ponto de entrada de uma aplicação.
 
-```
+```golang
 package main
 ```
 
@@ -29,7 +29,7 @@ GOROOT="/usr/local/go"
 
 # Hello World
 
-```
+```golang
 package main
 
 import (

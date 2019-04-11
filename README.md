@@ -1,4 +1,20 @@
-# Workshop Golang
+# Workshop prático para iniciantes na linguagem Go
+
+## Agenda
+
+1. [Inicio](/ch01-start)
+2. [Variáveis](/ch02-variaveis)
+3. [Tipos de Dados](/ch02-tipos-de-dados)
+4. [Arrays, Slices e Mapas](/ch03-arr-slice-map)
+5. [Cast](/ch05-cast)
+6. [Condicionais](/ch06-condicionais)
+7. [Loops](/ch07-looping)
+8. [Ponteiros](/ch08-ponteirs)
+9. [Funções](/ch09-functions)
+10. [Methods, structs e interfaces](/ch10-methods-structs-interfaces)
+11. [Packages](/ch11-packages)
+12. [Tratamento de erros](/ch12-tratamento-erros)
+13. [Concorrência](/ch13-concorrencia)
 
 golang.org:
 >"Go é uma linguagem de programação open-source que torna fácil criar software simples, confiável e eficiente."
