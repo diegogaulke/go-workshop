@@ -4,8 +4,8 @@
 
 1. [Inicio](/ch01-start)
 2. [Variáveis](/ch02-variaveis)
-3. [Tipos de Dados](/ch02-tipos-de-dados)
-4. [Arrays, Slices e Mapas](/ch03-arr-slice-map)
+3. [Tipos de Dados](/ch03-tipos-de-dados)
+4. [Arrays, Slices e Mapas](/ch04-arr-slice-map)
 5. [Cast](/ch05-cast)
 6. [Condicionais](/ch06-condicionais)
 7. [Loops](/ch07-looping)
