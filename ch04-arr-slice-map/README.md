@@ -144,7 +144,7 @@ Pretty cool right? :)
 
 ## Maps
 
-Em Go, *Maps* são o tipo de dado que mapeia uma chave a um valor, assim como nas outras linguagens como Java e Python.
+Em Go, *Maps* são o tipo de dado que mapeia uma chave a um valor, como em Java e Python.
 
 <img src="https://m.media-amazon.com/images/M/MV5BNDU1NTMwNTEtNjk0Yy00NDNlLWFiODctZWI5ODVlMGZmNzk2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_.jpg" alt="Obvious" width="50%"/>
 

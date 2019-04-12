@@ -2,7 +2,7 @@
 
 Um tipo de dado pode ser convertido em outro usando *type casting*.
 
-Vamos ver um exeplo:
+Vamos ver um exemplo:
 
 ```golang
 package main

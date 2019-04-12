@@ -22,7 +22,7 @@ func main() {
 }
 ```
 
-Percebam que no loop acima não estamos incrementando o índice na declaração do for, então aí vai um loop "completo".
+Percebam que no loop acima não estamos incrementando o índice na declaração do for, então aí vai um loop "completo":
 
 ```golang
 package main
@@ -40,7 +40,7 @@ func main() {
 
 Muito mais simples não?
 
-Tudo bem, sabemos que você quer fazer um loop infinito, então aí vai.
+Tudo bem, sabemos que você quer fazer um loop infinito, então aí vai:
 
 ```golang
 package main
