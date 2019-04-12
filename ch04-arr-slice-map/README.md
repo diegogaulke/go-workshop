@@ -131,7 +131,7 @@ A definição da função append é a seguinte
 
 A sintáxe, ```x ...T ``` significa que a função aceita um número variável de elementos no parâmetro x, desde que respeitem o tipo do slice.
 
-Uma questão que pode ter "ficado no ar": Se uma slice é um *wrap* de uma array, como ela tem esta flexibilidade?
+Uma questão que pode ter *ficado no ar*: Se uma slice é um *wrap* de uma array, como ela tem esta flexibilidade?
 Bem, isso acontecer *debaixo dos panos*. Por exemplo: quando um novo elemento é adicionado a um slice ocorre o seguinte:
 
 1. Uma nova array é criada
@@ -143,3 +143,44 @@ Pretty cool right? :)
 
 
 ## Maps
+
+Em Go, *Maps* são o tipo de dado que mapeia uma chave a um valor, assim como nas outras linguagens como Java e Python.
+
+<img src="https://m.media-amazon.com/images/M/MV5BNDU1NTMwNTEtNjk0Yy00NDNlLWFiODctZWI5ODVlMGZmNzk2XkEyXkFqcGdeQXVyNjcwMzEzMTU@._V1_.jpg" alt="Obvious" width="50%"/>
+
+*Fucking obvious*
+
+Declarando um *map* em Go
+
+```golang
+var m map[string]int
+```
+
+Acima, a variável *m* referência o mapa criado, no qual a chave é uma *string* e o valor é um *int*.
+
+Abaixo alguns exemplos de uso de map.
+
+```golang
+package main
+
+import "fmt"
+
+func main() {
+	m := make(map[string]bool)
+
+	m["www.google.com.br"] = true
+	m["www.facebook.com"] = true
+
+	if m["www.orkut.com"] == false {
+		fmt.Println("Oops, nunca acessamos este site")
+    }
+    
+    m["www.orkut.com.br"] = true
+
+    fmt.Println(len(m))
+
+    delete(m, "www.orkut.com.br")
+
+    fmt.Println(len(m))
+}
+```
