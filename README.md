@@ -9,7 +9,7 @@
 5. [Cast](/ch05-cast)
 6. [Condicionais](/ch06-condicionais)
 7. [Loops](/ch07-looping)
-8. [Ponteiros](/ch08-pointeirs)
+8. [Ponteiros](/ch08-pointers)
 9. [Funções](/ch09-functions)
 10. [Methods, structs e interfaces](/ch10-methods-structs-interfaces)
 11. [Packages](/ch11-packages)
