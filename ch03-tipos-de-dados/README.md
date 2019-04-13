@@ -21,6 +21,6 @@ Alguns exemplos de declaração:
 var b bool = true
 var i int = 1
 var x int32 = 35000
-var s string "hello world"
-var f float32 3.14
+var s string = "hello world"
+var f float32 = 3.14
 ```
