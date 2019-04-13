@@ -48,7 +48,7 @@ import(
 )
 
 func main() {
-    var arr [...]int{9, 0, 3}
+    var arr = [...]int{9, 0, 3}
     fmt.Println(len(arr)) // imprime 3
 }
 ```
@@ -76,7 +76,7 @@ func main() {
     fmt.Println(s)
 
     // shorthand
-    s2 := []int
+    s2 := []int{}
     fmt.Println(s2)
 
     // len de uma slice

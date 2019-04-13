@@ -7,3 +7,14 @@ Temos diversos pacotes nativos no Go. O mais famoso, e que mais usamos até agor
 Robert Griesemer:
 
 >“Go packages in the main mechanism for programming in the large that go provides and they make possible to divvy up a large project into smaller pieces.”
+
+Alguns pacotes nativos muito usados em go:
+
+### fmt
+https://golang.org/pkg/fmt/
+
+### json
+https://golang.org/pkg/encoding/json/
+
+### http
+https://golang.org/pkg/net/http/
