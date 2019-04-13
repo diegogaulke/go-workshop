@@ -82,7 +82,7 @@ func main() {
 	//=> dg
 	up.setSenha("zyz")
 	fmt.Println(up.Senha)
-	//=> zyx
+	//=> xyz
 }
 ```
 
@@ -92,4 +92,7 @@ Repare que o *receiver* é um ponteiro. Com o ponteiro estamos passando uma refe
 Observe que no exemplo o valor da senha não é alterado, porque o método *setSenha()* não é do tipo do *receiver*, enquanto que o método *setLogin()* é um ponteiro.
 
 ## Interfaces
+
+As interfaces em Go são uma coleção de métodos. Interfaces ajudam a agrupar propriedades de um tipo.
+Vamos ver o exemplo da interface *animal*.
 
