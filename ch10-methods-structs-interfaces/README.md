@@ -49,3 +49,47 @@ fmt.Println(up.Login)
 
 Vamos criar um *Method* que tem um *receiver* do tipo *Usuario* que criamos anteriormente.
 
+```golang
+package main
+
+import "fmt"
+
+// Usuario defination
+type Usuario struct {
+	Id    int
+	Login string
+	Senha string
+}
+
+// method defination
+func (u *Usuario) descricao() {
+	fmt.Printf("Id de %v é %v.", u.Login, u.Id)
+}
+func (u *Usuario) setLogin(l string) {
+	u.Login = l
+}
+
+func (u Usuario) setSenha(s string) {
+	u.Senha = s
+}
+
+func main() {
+	up := &Usuario{Id: 1, Login: "diego", Senha: "xyz"}
+	up.descricao()
+	// => Id de diego é 1
+	up.setLogin("dg")
+	fmt.Println(up.Login)
+	//=> dg
+	up.setSenha("zyz")
+	fmt.Println(up.Senha)
+	//=> zyx
+}
+```
+
+Como vimos no exemplo acima, agora o método *descricao()* pode ser chamado usando o operador ponto (*.*)
+Repare que o *receiver* é um ponteiro. Com o ponteiro estamos passando uma referencia para o valor, então se fizermos alguma alteração no método ela irá refletir no *receiver* *up*.
+
+Observe que no exemplo o valor da senha não é alterado, porque o método *setSenha()* não é do tipo do *receiver*, enquanto que o método *setLogin()* é um ponteiro.
+
+## Interfaces
+
