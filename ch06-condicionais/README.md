@@ -44,4 +44,6 @@ func main() {
 }
 ```
 
+Obs.: No Go não precisa do ```break```, ele é implicito.
+
 Simples certo? :)

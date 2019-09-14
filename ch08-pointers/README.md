@@ -18,14 +18,14 @@ O operador *&* pode ser utilizado para buscar buscar o endereço de uma variáve
 
 ```golang
 a := 12
-ap = &a
+ap := &a
 ```
 
 O valor referenciado ao ponteiro pode ser acessado usando o operador ```*```.
 
 ```golang
 a := 12
-ap = &a
+ap := &a
 fmt.Println(*ap) // imprime 12
 ```
 
