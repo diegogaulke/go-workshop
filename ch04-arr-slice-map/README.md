@@ -31,7 +31,7 @@ arr[2] = 9
 Você pode usar ```...``` na definição de capacidade de uma array, e deixar o compilador definir sua capacidade baseada nos elementos na declaração.
 
 ```golang
-var arr [...] int{1, 2}
+var arr = [...]int{1, 2}
 ```
 
 No caso acima o tamanho da array vai ser de 2 elementos.
