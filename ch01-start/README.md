@@ -45,7 +45,7 @@ func main(){
 
 No exemplo acima, a primeira linha indica que este arquivo Go pertence ao pacote *main*.
 
-Logo após temos uma declaração de importação de outro pacote, o *fmt*. O pacote *fmt* prove funções de formatação de I/O.
+Logo após temos uma declaração de importação de outro pacote, o *fmt*. O pacote *fmt* provê funções de formatação de I/O.
 
 Importamos o pacote utilizando a palavra reservada *import*.
 
@@ -64,7 +64,7 @@ Vamos executar ele:
 ./main
 ```
 
-Existe uma maneira mais simples de rodar o código go, que abstrai a compilação.
+Existe uma maneira mais simples de rodar o código Go, que abstrai a compilação.
 
 ```
 go run main.go
