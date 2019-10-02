@@ -15,12 +15,12 @@ var a [10]int
 var arr [3][3]int
 ```
 
-Iniciando uma *array* com valores.
+Iniciando um *array* com valores.
 ```golang
 var arr [3]int{1, 7, 11}
 ```
 
-Atribuindo valores a uma *array* já definida.
+Atribuindo valores a um *array* já definida.
 ```golang
 var arr [3]int
 arr[0] = 1
@@ -36,7 +36,7 @@ var arr = [...]int{1, 2}
 
 No caso acima o tamanho do *array* vai ser de 2 elementos.
 
-### Tamanho de uma array:
+### Tamanho de um *array*:
 
 O tamanho de um *array* pode ser encontrado usando a função nativa `len()`.
 
@@ -79,14 +79,14 @@ func main() {
     s2 := []int{}
     fmt.Println(s2)
 
-    // len de uma slice
+    // len de um slice
     fmt.Println(len(s2))
 }
 ```
 
 O código acima criou um *slice* sem capacidade inicial e sem nenhum elemento.
 
-Criando um *slice* a partir de uma array:
+Criando um *slice* a partir de um array:
 
 ```golang
 package main
@@ -95,7 +95,7 @@ import "fmt"
 
 func main() {
     a := [5]int{76, 77, 78, 79, 80}
-    // cria uma slice de a[1] até a[3]
+    // cria um slice de a[1] até a[3]
     var b []int = a[1:4]
     fmt.Println(b)
 }
@@ -122,7 +122,7 @@ func main() {
 }
 ```
  
-#### Adicionando elementos a uma slice
+#### Adicionando elementos a um slice
 
 Como sabemos, *arrays* são limitadas em seu tamanho e não podem ser aumentadas. *Slices* tem seu tamanho dinâmico e podem receber novos elementos em tempo de execução usando a função nativa `append`.
 
@@ -130,10 +130,10 @@ A definição da função `append` é a seguinte: `func append(s []T, x ...T) []
 
 A sintaxe, `x ...T` significa que a função aceita um número variável de elementos no parâmetro `x`, desde que respeitem o tipo do *slice*.
 
-Uma questão que pode ter *ficado no ar*: Se uma slice é um *wrap* de uma *array*, como ela tem esta flexibilidade?
+Uma questão que pode ter *ficado no ar*: Se um slice é um *wrap* de um *array*, como ela tem esta flexibilidade?
 Bem, isso acontecer *debaixo dos panos*. Por exemplo: quando um novo elemento é adicionado a um *slice* ocorre o seguinte:
 
-1. Um nova *array* é criado
+1. Um novo *array* é criado
 2. Os elementos do *array* atual são copiados
 3. O elemento **adicionado** ao *slice* é incluido no *array*
 4. É retornado um *slice*, que é uma referência a este novo *array*

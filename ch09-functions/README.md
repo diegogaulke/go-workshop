@@ -1,6 +1,6 @@
 # Funções
 
-A função *main()* definida no pacote de mesmo nome, é o ponto de entrada para a execução de um programa Go.
+A função `main()` definida no pacote de mesmo nome, é o ponto de entrada para a execução de um programa Go.
 
 Podemos definir mais funções e as utilizar, conforme este exemplo:
 
@@ -18,7 +18,7 @@ func main() {
 }
 ```
 
-Como podemos ver no exemplo anterior, uma função é definida pela palavra *func* seguida pelo nome da função. Os argumentos que uma função precisa devem ser definidos de acordo com seu tipo de dado, e em seguida o tipo de retorno.
+Como podemos ver no exemplo anterior, uma função é definida pela palavra `func` seguida pelo nome da função. Os argumentos que uma função precisa, devem ser definidos de acordo com seu tipo de dado, e em seguida o tipo de retorno.
 
 Também podemos definir o retorno na declaração da função:
 
@@ -36,7 +36,7 @@ func main() {
 }
 ```
 
-No exemplo acima, a variável *c* é definida na declaração da função, não sendo necessária ser informada na declaração de retorno ao final.
+No exemplo acima, a variável `c` é definida na declaração da função, não sendo necessária ser informada na declaração de retorno ao final.
 
 Você também pode definir múltiplas variáveis de retorno para uma função:
 
