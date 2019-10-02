@@ -2,11 +2,11 @@
 
 Go é orientado a objetos? Não.
 
-Porém as *structs*, *interfaces* e *methods* fazem quem conhece orientação a objetos se sentir _em casa_.
+Porém as `structs`, `interfaces` e `methods` fazem quem conhece orientação a objetos se sentir _em casa_.
 
 ## Struct
 
-A struct é um agrupamento ou uma coleção, tipada, de diferentes campos. Ela é usada para agrupar dados. Por exemplo, se quisermos agrupar dados de um tipo *Usuario* podemos definir uma *struct* com id, login e senha.
+A struct é um agrupamento ou uma coleção, tipada, de diferentes campos. Ela é usada para agrupar dados. Por exemplo, se quisermos agrupar dados de um tipo `Usuario` podemos definir uma `struct` com `id`, `login` e `senha`.
 
 ```golang
 type Usuario struct {
@@ -16,7 +16,7 @@ type Usuario struct {
 }
 ```
 
-Agora alguns exemplos de como criar um dado com a *struct* criada.
+Agora alguns exemplos de como criar um dado com a `struct` criada.
 
 ```golang
 // modo 1: passando valores na sequencia que os atributos estao na struct
@@ -36,7 +36,7 @@ u1 := Usuario{1, "diego", "diegobgaulke@gopher.go"}
 fmt.Println(u1.Login)
 ```
 
-Você também pode acessar os atributos de uma *struct* utilizando diretamente ponteiro.
+Você também pode acessar os atributos de uma `struct` utilizando diretamente ponteiro.
 
 ```golang
 up = &Usuario{1, "diego", "diegobgaulke@gopher.go"}
@@ -45,9 +45,9 @@ fmt.Println(up.Login)
 
 ## Methods
 
-*Methods*  são tipos especiais de função com um *receiver*. Um *receiver* pode ser tanto um valor como um ponteiro.
+`Methods` são tipos especiais de função com um `receiver`. Um `receiver` pode ser tanto um valor como um ponteiro.
 
-Vamos criar um *Method* que tem um *receiver* do tipo *Usuario* que criamos anteriormente.
+Vamos criar um `Method` que tem um `receiver` do tipo `Usuario` que criamos anteriormente.
 
 ```golang
 package main
@@ -86,15 +86,15 @@ func main() {
 }
 ```
 
-Como vimos no exemplo acima, agora o método *descricao()* pode ser chamado usando o operador ponto (*.*)
-Repare que o *receiver* é um ponteiro. Com o ponteiro estamos passando uma referencia para o valor, então se fizermos alguma alteração no método ela irá refletir no *receiver* *up*.
+Como vimos no exemplo acima, agora o método `descricao()` pode ser chamado usando o operador ponto (`.`).
+Repare que o `receiver` é um ponteiro. Com o ponteiro estamos passando uma referência para o valor, então se fizermos alguma alteração no método ela irá refletir no `receiver up`.
 
-Observe que no exemplo o valor da senha não é alterado, porque o método *setSenha()* não é do tipo do *receiver*, enquanto que o método *setLogin()* é um ponteiro.
+Observe que no exemplo o valor da senha não é alterado, porque o método `setSenha()` não é do tipo do `receiver`, enquanto que o método `setLogin()` é um ponteiro.
 
 ## Interfaces
 
 As interfaces em Go são uma coleção de métodos. Interfaces ajudam a agrupar propriedades de um tipo.
-Vamos ver o exemplo da interface *animal*.
+Vamos ver o exemplo da interface `Animal`.
 
 ```golang
 type Animal interface {
@@ -102,7 +102,7 @@ type Animal interface {
 }
 ```
 
-Acima temos uma interface do tipo *Animal* definida. 
+Acima temos uma interface do tipo `Animal` definida. 
 
 Vamos agora criar duas _espécies_ que implementam esta interface.
 
@@ -144,7 +144,7 @@ func main() {
 }
 ```
 
-Na função *main* criamos uma variável *a* do tipo *Animal*.
-Assossiamos uma *Cobra* e um *Gato* a variável de interface *Animal*.
+Na função `main` criamos uma variável `a` do tipo `Animal`.
+Assossiamos uma `Cobra` e um `Gato` a variável de interface `Animal`.
 
-Com a mesma chamada conseguimos a descrição conforme o tipo de espécie do Animal em questão.
+Com a mesma chamada conseguimos a descrição conforme o tipo de espécie do animal em questão.

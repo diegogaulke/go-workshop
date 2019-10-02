@@ -2,15 +2,15 @@
 
 Go foi criado pensando em concorrência.
 
-A concorrência em Go pode ser alcançada utilizando as *go routines*, que são *threads* leves.
+A concorrência em Go pode ser alcançada utilizando as *goroutines*, que são *threads* leves.
 
-### Go routine
+### Goroutine
 
-Go routines são funções que podem rodar em paralelo, ou concorrentemente com outra função.
-Criar uma Go routine é muito simples.
+*Goroutines* são funções que podem rodar em paralelo ou concorrentemente com outra função.
+Criar uma *goroutine* é muito simples.
 
-Simplesmente adicionamos a palavra reservada *go* na frente de uma chamada de função, assim fazemos ela ser executada em paralelo.
-Go routines são muito leves, por isso podemos criar milhares dela.
+Simplesmente adicionamos a palavra reservada `go` na frente de uma chamada de função, assim fazemos ela ser executada em paralelo.
+*Goroutines* são muito leves, por isso podemos criar milhares dela.
 
 ```golang
 package main
@@ -34,4 +34,4 @@ func c() {
 //=> I am concurrent
 ```
 
-Como podemos ver no exemplo acima, a função *c* é uma Go routine que executa em paralelo com a função main.
+Como podemos ver no exemplo acima, a função `c` é uma *goroutine* que executa em paralelo com a função `main`.

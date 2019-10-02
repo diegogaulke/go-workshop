@@ -70,7 +70,7 @@ func main() {
 
 Existe uma forma de iteração sobre mapas e slices chamada de *range*.
 
-Quando iteramos em uma slice, dois valores são retornados em cada iteração. O primeiro é o índice, o segundo é o valor do elemendo naquele índice.
+Quando iteramos em um slice, dois valores são retornados em cada iteração. O primeiro é o índice, o segundo é o valor do elemendo naquele índice.
 
 ```golang
 package main
@@ -86,7 +86,7 @@ func main() {
 }
 ```
 
-Você pode ignorar o índice ou o valor os apontando para ```_```.
+Você pode ignorar o índice ou o valor os apontando para `_`.
 
 ```golang
 for i, _ := range pow

@@ -11,11 +11,11 @@ import "fmt"
 
 func main() {
     if num := 9; num < 0  {
-        fmt.Println(num, " é negativo")
+        fmt.Println(num, "é negativo")
     } else if num < 10 {
-        fmt.Println(num, " tem um dígito")
+        fmt.Println(num, "tem um dígito")
     } else {
-        fmt.Println(num, " tem vários dígitos")
+        fmt.Println(num, "tem vários dígitos")
     }
 }
 ```
@@ -44,6 +44,6 @@ func main() {
 }
 ```
 
-Obs.: No Go não precisa do ```break```, ele é implicito.
+> Obs.: No Go não precisa do `break`, ele é implicito.
 
 Simples certo? :)

@@ -16,8 +16,8 @@
 12. [Tratamento de erros](/ch12-tratamento-erros)
 13. [Concorrência](/ch13-concorrencia)
 
-golang.org:
->"Go é uma linguagem de programação open-source que torna fácil criar software simples, confiável e eficiente."
+>_"Go é uma linguagem de programação open-source que torna fácil criar software simples, confiável e eficiente."_
+>> [golang.org](https://golang.org/)
 
 A linguagem foi desenvolvida dentro da Google, pelos engenheiros Robert Griesemer, Rob Pike e Ken Thompson.
 
@@ -38,9 +38,11 @@ Em Go, a ideia é alcançar apenas uma maneira correta de resolver o mesmo probl
 
 Isso se deve a linguagem ter menos características complexas e ser menos verbosa.
 
-Rob Pike:
->"When you have features that add expressiveness it typically adds expense"
+>_"When you have features that add expressiveness it typically adds expense"_
+>> **Rob Pike**
 
 ### O melhor da linguagem, o gopher
 
 ![Gopher](https://cdn-images-1.medium.com/max/1200/1*Rgcubeti6JDVTwMPhcqBCQ.png)
+
+O gopher foi criado por [Renee French](http://reneefrench.blogspot.com/).

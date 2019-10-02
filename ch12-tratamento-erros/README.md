@@ -2,9 +2,9 @@
 
 <img src="https://scontent.fbnu2-1.fna.fbcdn.net/v/t1.0-9/42858329_1175062249316817_809210549106638848_n.jpg?_nc_cat=101&_nc_ht=scontent.fbnu2-1.fna&oh=5ba516ead4f1829359404441e30c3737&oe=5D46B6FA" alt="Obvious" width="75%"/>
 
-Erros são resultados inesperados (runtime) como resultado de um programa. Esta chamada de API pode ter sucesso ou falhar.
+Erros são resultados inesperados (`runtime`) durante a execução de programa. Uma chamada de API pode resultar em **sucesso** ou **falha**.
 
-Um erro em Go pode ser reconhecido quando um *tipo* *error* aparece.
+Um erro em Go pode ser reconhecido quando um *tipo* `error` aparece.
 
 ```golang
 resp, err := http.Get("http://example.com/")
@@ -35,7 +35,7 @@ func main() {
 ### Retornando um erro customizado em uma função
 
 Quando estamos escrevendo uma função própria, podem existir casos que precisamos lançar erros.
-Esses erros podem ser retornados com a ajuda do objeto *error*.
+Esses erros podem ser retornados com a ajuda do objeto `error`.
 
 ```golang
 package main
@@ -67,11 +67,11 @@ A maioria dos pacotes nativos do Go, ou pacotes externos que usamos, tem algum m
 
 ### Panic
 
-*panic()* que para a execução do programa. Ela aceita como parâmetro um tipo *error* ou uma *string*. Ela só deve ser chamada quando um problema totalmente inesperado que impede o prosseguimento da execução da aplicação é encontrado.
+A função `panic()` interrompe a execução do programa. Ela aceita como parâmetro um tipo `error` ou uma `string`. Ela só deve ser chamada quando um problema totalmente inesperado que impede o prosseguimento da execução da aplicação é encontrado.
 
 ### Defer
 
-*defer* é algo que sempre vai ser executado após o término de uma função.
+O `defer` é algo que sempre vai ser executado após o término de uma função.
 
 ```golang
 //Go
@@ -106,4 +106,4 @@ func g(i int) {
 }
 ```
 
-No exemplo acima, chamamosa função *panic()*. Como você percebe, há uma declaração de *defer* que fará com que o programa execute a linha no final da execução do programa. O *defer* também pode ser usado quando precisamos que algo seja  executado ao final de uma função, por exemplo, fechar um arquivo.
+No exemplo acima, chamamos a função `panic()`. Como pode ser visto, há uma declaração de `defer` que fará com que o programa execute a linha no final da execução do programa. O `defer` também pode ser usado quando precisamos que algo seja executado ao final de uma função, por exemplo, fechar um arquivo.
