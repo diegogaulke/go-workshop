@@ -1,13 +1,13 @@
 # Variáveis
 
-Variáveis em Go são tipadas estaticamente, ou seja seu tipo é checado na hora de sua declaração, sendo imutável.
+Variáveis em Go são tipadas estaticamente, ou seja, seu tipo é checado na hora de sua declaração, sendo imutável.
 Elas são declaradas de maneira explícita.
 
 ```golang
 var i int
 ```
 
-No exemplo acima o valor inicial será zero. Para declarar um valor inicial para a variável você pode usar a sintáxe:
+No exemplo acima, o valor inicial será zero. Para declarar um valor inicial para a variável você pode usar a sintaxe:
 
 ```golang
 var i int = 1
