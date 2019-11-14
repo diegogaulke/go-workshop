@@ -1,7 +1,5 @@
 # Tratamento de Erros
 
-<img src="https://scontent.fbnu2-1.fna.fbcdn.net/v/t1.0-9/42858329_1175062249316817_809210549106638848_n.jpg?_nc_cat=101&_nc_ht=scontent.fbnu2-1.fna&oh=5ba516ead4f1829359404441e30c3737&oe=5D46B6FA" alt="Obvious" width="75%"/>
-
 Erros são resultados inesperados (`runtime`) durante a execução de programa. Uma chamada de API pode resultar em **sucesso** ou **falha**.
 
 Um erro em Go pode ser reconhecido quando um *tipo* `error` aparece.
